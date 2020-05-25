@@ -2,11 +2,11 @@ class NegociacaoList {
     
     private _list: Array<Negociacao> = [];
     
-    add(negociacao: Negociacao) {
+    add(negociacao: Negociacao): void {
         this._list.push(negociacao);
     }
 
-    toArray() {
-        return this._list;
+    toArray(): Array<Negociacao> {
+        return [].concat(this._list);
     }
 }
